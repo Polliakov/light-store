@@ -1,0 +1,20 @@
+@import "src/mixins";
+
+.card.category {
+  width: 196px;
+  padding: 0px;
+  overflow: hidden;
+}
+
+.img-container {
+  cursor: pointer;
+  background-color: var(--bg-img);
+  width: 100%;
+  height: 98px;
+  margin-bottom: 8px;
+}
+
+.nav-link.title{
+  display: block;
+  margin: 0px 8px 8px;
+}

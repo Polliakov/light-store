@@ -1,0 +1,8 @@
+<h2 class="center">Категории</h2>
+<div class="tab-btn-section">
+  <button (click)="addCategory()" class="btn">Добавить</button>
+  <button (click)="editCategory()" [disabled]="isEditBtnDissabled" class="btn">Редактировать</button>
+</div>
+<app-products-category-selector
+  (selected)="onCategorySelected($event)"
+></app-products-category-selector>

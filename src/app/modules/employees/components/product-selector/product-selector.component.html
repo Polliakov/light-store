@@ -1,0 +1,5 @@
+<img *ngIf="loading" class="lds-spinner" src="assets/img/gifs/loading-spinner.gif" alt="...">
+<div class="grid-layout">
+  <app-product-item *ngFor="let product of products$ | async" [product]="product"
+    [showPrice]="showPrice" (itemClick)="onItemClick($event)"></app-product-item>
+</div>

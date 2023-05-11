@@ -1,0 +1,9 @@
+<div class="headers">
+  <div class="header">Дата</div>
+  <div class="header">Магазин</div>
+  <div class="header">Сотрудник</div>
+</div>
+<img *ngIf="loading" class="lds-spinner" src="assets/img/gifs/loading-spinner.gif" alt="...">
+<app-products-adding-item *ngFor="let adding of addings$ | async" [adding]="adding"
+  (selected)="onItemSelected($event)"
+></app-products-adding-item>

@@ -1,0 +1,21 @@
+<nav *ngIf="pagesCount > 1">
+  <ul>
+    <ng-container *ngIf="leftBound as bound">
+      <li>
+        <button (click)="onPageBtnClick(1)" class="page-btn">{{1}}</button>
+      </li>
+      <li *ngIf="bound.ellipsis" class="ellipsis"></li>
+    </ng-container>
+    <li *ngFor="let page of pagesRange">
+      <button (click)="onPageBtnClick(page)"
+        class="page-btn" [ngClass]="{current: page == currentPage}"
+      >{{page}}</button>
+    </li>
+    <ng-container *ngIf="rightBound as bound">
+      <li *ngIf="bound.ellipsis" class="ellipsis"></li>
+      <li>
+        <button (click)="onPageBtnClick(pagesCount)" class="page-btn">{{pagesCount}}</button>
+      </li>
+    </ng-container>
+  </ul>
+</nav>

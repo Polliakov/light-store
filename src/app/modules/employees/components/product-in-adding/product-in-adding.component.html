@@ -1,0 +1,13 @@
+<div class="item">
+  <div class="title-section">
+      <div class="img-container">
+        <img [src]="product.imageUri" [alt]="product.title" class="img-fit">
+      </div>
+    <h3 class="nav-link title">{{product.title}}</h3>
+  </div>
+  <div class="counter">
+    <input (change)="onCountChange()" type="text" onlyNumber [precision]="7"
+      [readOnly]="readonly" [(ngModel)]="product.count" class="num-sm" >
+  </div>
+  <button *ngIf="!readonly" (click)="onBtnRemoveClick()" class="btn-close md">&times;</button>
+</div>

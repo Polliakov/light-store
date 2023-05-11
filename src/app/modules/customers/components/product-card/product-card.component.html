@@ -1,0 +1,33 @@
+<div class="card">
+  <a [routerLink]="['/products', product.id]">
+    <div class="img-container">
+      <img class="img-fit" [src]="product.imageUri" [alt]="product.title">
+    </div>
+  </a>
+  <a [routerLink]="['/products', product.id]" class="nav-link">
+    <h3 class="title">{{product.title}}</h3>
+  </a>
+  <app-product-availability
+    [availabilityCount]="product.availabilityCount"
+    (showRemainsNeeded)="showRemains()">
+  </app-product-availability>
+  <div class="price-section">
+    <div class="price md">
+      {{product.price | price}} р./{{product.unitOfMeasure | unitOfMeasure}}
+    </div>
+    <a
+      *ngIf="product.inCart; else btnCartAddBlock"
+      routerLink="/cart" class="btn-round lg"
+    >
+      <img width="28px" src="assets/img/icons/checkmark.svg" alt="В корзину">
+    </a>
+    <ng-template #btnCartAddBlock>
+      <button
+        *ngIf="isAvailable" (click)="onBtnCartAdd()"
+        [disabled]="btnDisabled" class="btn-round lg"
+      >
+        <img src="assets/img/icons/cart_icon.svg" alt="Добавить в корзину">
+      </button>
+    </ng-template>
+  </div>
+</div>

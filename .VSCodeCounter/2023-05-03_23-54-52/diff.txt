@@ -1,0 +1,58 @@
+Date : 2023-05-03 23:54:52
+Directory : d:\JS\light-store\src
+Total : 17 files,  161 codes, 0 comments, 27 blanks, all 188 lines
+
+Languages
++------------+------------+------------+------------+------------+------------+
+| language   | files      | code       | comment    | blank      | total      |
++------------+------------+------------+------------+------------+------------+
+| TypeScript |          9 |        122 |          0 |         23 |        145 |
+| HTML       |          4 |         29 |          0 |          1 |         30 |
+| SCSS       |          4 |         10 |          0 |          3 |         13 |
++------------+------------+------------+------------+------------+------------+
+
+Directories
++---------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                                                          | files      | code       | comment    | blank      | total      |
++---------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                                             |         17 |        161 |          0 |         27 |        188 |
+| . (Files)                                                                                                     |          1 |          1 |          0 |          0 |          1 |
+| app                                                                                                           |         16 |        160 |          0 |         27 |        187 |
+| app\modules                                                                                                   |         16 |        160 |          0 |         27 |        187 |
+| app\modules\customers                                                                                         |         13 |        143 |          0 |         22 |        165 |
+| app\modules\customers (Files)                                                                                 |          1 |          2 |          0 |          0 |          2 |
+| app\modules\customers\components                                                                              |          6 |         59 |          0 |         11 |         70 |
+| app\modules\customers\components\modal-please-signup                                                          |          3 |         30 |          0 |          8 |         38 |
+| app\modules\customers\components\order-item                                                                   |          3 |         29 |          0 |          3 |         32 |
+| app\modules\customers\models                                                                                  |          1 |          4 |          0 |          1 |          5 |
+| app\modules\customers\pages                                                                                   |          5 |         78 |          0 |         10 |         88 |
+| app\modules\customers\pages\cart-page                                                                         |          2 |         12 |          0 |          1 |         13 |
+| app\modules\customers\pages\order-creating-page                                                               |          3 |         66 |          0 |          9 |         75 |
+| app\modules\shared                                                                                            |          3 |         17 |          0 |          5 |         22 |
+| app\modules\shared\models                                                                                     |          2 |         10 |          0 |          4 |         14 |
+| app\modules\shared\services                                                                                   |          1 |          7 |          0 |          1 |          8 |
++---------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++---------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| filename                                                                                                      | language   | code       | comment    | blank      | total      |
++---------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| d:\JS\light-store\src\app\modules\customers\components\modal-please-signup\modal-please-signup.component.html | HTML       |         10 |          0 |          1 |         11 |
+| d:\JS\light-store\src\app\modules\customers\components\modal-please-signup\modal-please-signup.component.scss | SCSS       |          0 |          0 |          1 |          1 |
+| d:\JS\light-store\src\app\modules\customers\components\modal-please-signup\modal-please-signup.component.ts   | TypeScript |         20 |          0 |          6 |         26 |
+| d:\JS\light-store\src\app\modules\customers\components\order-item\order-item.component.html                   | HTML       |         16 |          0 |          0 |         16 |
+| d:\JS\light-store\src\app\modules\customers\components\order-item\order-item.component.scss                   | SCSS       |          8 |          0 |          2 |         10 |
+| d:\JS\light-store\src\app\modules\customers\components\order-item\order-item.component.ts                     | TypeScript |          5 |          0 |          1 |          6 |
+| d:\JS\light-store\src\app\modules\customers\customers.module.ts                                               | TypeScript |          2 |          0 |          0 |          2 |
+| d:\JS\light-store\src\app\modules\customers\models\order-item.ts                                              | TypeScript |          4 |          0 |          1 |          5 |
+| d:\JS\light-store\src\app\modules\customers\pages\cart-page\cart-page.component.html                          | HTML       |          1 |          0 |          0 |          1 |
+| d:\JS\light-store\src\app\modules\customers\pages\cart-page\cart-page.component.ts                            | TypeScript |         11 |          0 |          1 |         12 |
+| d:\JS\light-store\src\app\modules\customers\pages\order-creating-page\order-creating-page.component.html      | HTML       |          2 |          0 |          0 |          2 |
+| d:\JS\light-store\src\app\modules\customers\pages\order-creating-page\order-creating-page.component.scss      | SCSS       |          1 |          0 |          0 |          1 |
+| d:\JS\light-store\src\app\modules\customers\pages\order-creating-page\order-creating-page.component.ts        | TypeScript |         63 |          0 |          9 |         72 |
+| d:\JS\light-store\src\app\modules\shared\models\product-in-warehouse-minified.ts                              | TypeScript |          5 |          0 |          2 |          7 |
+| d:\JS\light-store\src\app\modules\shared\models\product-remains-minified.ts                                   | TypeScript |          5 |          0 |          2 |          7 |
+| d:\JS\light-store\src\app\modules\shared\services\product-in-warehouse.service.ts                             | TypeScript |          7 |          0 |          1 |          8 |
+| d:\JS\light-store\src\styles.scss                                                                             | SCSS       |          1 |          0 |          0 |          1 |
+| Total                                                                                                         |            |        161 |          0 |         27 |        188 |
++---------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+

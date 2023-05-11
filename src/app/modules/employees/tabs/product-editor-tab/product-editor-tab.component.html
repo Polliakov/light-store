@@ -1,0 +1,75 @@
+<img *ngIf="loading" class="lds-spinner" src="assets/img/gifs/loading-spinner.gif" alt="...">
+<app-modal-accept #modalDelete
+  title="{{'Удалить \"' + productTitle + '\"?'}}"
+  (accepted)="modalDeleteAccept()"
+></app-modal-accept>
+<div *ngIf="!loading" class="tab-container md">
+  <h2 class="center">{{isEditMode ? 'Редактирование' : 'Добавление'}} товара</h2>
+  <form [formGroup]="form" (ngSubmit)="submit()">
+    <div class="form-section">
+      <app-dropdown-label title="Категория" [isPreFolded]="!isEditMode">
+        <div class="tab-container lg">
+          <app-products-category-selector
+            [preselectedId]="categoryId"
+            (selected)="onCategorySelected($event)"
+          ></app-products-category-selector>
+        </div>
+      </app-dropdown-label>
+    </div>
+
+    <div class="form-section">
+      <label for="title">Наименование</label>
+      <input type="text" name="title" formControlName="title"
+        placeholder="Введите наименование..." class="form-text">
+      <app-form-error [control]="title"></app-form-error>
+    </div>
+
+    <div class="form-section">
+      <app-image-selector (selected)="onImageSelected($event)"></app-image-selector>
+    </div>
+
+    <div class="form-section">
+      <label for="price">Цена</label>
+      <input type="text" onlyNumber [precision]="12" [scale]="2" name="price" formControlName="price"
+        placeholder="Введите цену..." class="form-text">
+      <app-form-error [control]="price"></app-form-error>
+    </div>
+
+    <div class="form-section">
+      <label for="unit-of-measure">Единицы измерения</label>
+      <select name="unit-of-measure" formControlName="unitOfMeasure" class="form-select-lg">
+        <option [ngValue]="0">Единицы</option>
+        <option [ngValue]="1">Метры</option>
+        <option [ngValue]="2">Квадратные метры</option>
+      </select>
+    </div>
+
+    <div class="form-section">
+      <label for="size">Размеры</label>
+      <input type="text" name="size" formControlName="size"
+        placeholder="Введите размеры..." class="form-text">
+      <app-form-error [control]="size"></app-form-error>
+    </div>
+
+    <div class="form-section">
+      <label for="weight">Вес</label>
+      <input type="text" onlyNumber [precision]="12" [scale]="6" name="weight" formControlName="weight"
+        placeholder="Введите вес..." class="form-text">
+      <app-form-error [control]="weight"></app-form-error>
+    </div>
+
+    <div class="form-section">
+      <label for="description">Описание</label>
+      <textarea name="description" rows="10" formControlName="description"
+        placeholder="Введите описание..." class="form-area-lg"></textarea>
+      <app-form-error [control]="description"></app-form-error>
+    </div>
+
+    <div class="form-section form-btn-wrapper">
+      <button [disabled]="isBtnSubmitDisabled" class="btn">Сохранить</button>
+      <button [disabled]="isBtnSubmitDisabled" type="button" *ngIf="!isEditMode" (click)="createManyTimes(1000)" class="btn">Добавить 1000</button>
+      <button [disabled]="isBtnSubmitDisabled" type="button" *ngIf="isEditMode"
+        (click)="onBtnDeleteClick()" class="btn delete">Удалить</button>
+    </div>
+  </form>
+</div>

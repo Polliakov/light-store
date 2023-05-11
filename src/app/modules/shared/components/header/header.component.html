@@ -1,0 +1,37 @@
+<header>
+  <div class="container">
+    <nav>
+      <a routerLink="/products">
+        <img src="assets/img/logo.png" alt="Кузнечный дом" class="logo">
+      </a>
+      <ul>
+        <li *ngIf="isAuthed | async; else notAuthedBlock">
+          <div class="dropdown">
+            <a [routerLink]="getProfileLink() | async" class="nav-link"><div>Профиль</div></a>
+            <div class="dropdown-content-wrapper">
+              <div class="dropdown-content">
+                <button (click)="onBtnLogoutClick()" class="nav-link">Выйти</button>
+              </div>
+            </div>
+          </div>
+        </li>
+        <ng-template #notAuthedBlock>
+          <li>
+            <a routerLink="/registration" class="nav-link"><div>Регистрация</div></a>
+          </li>
+          <li>
+            <a routerLink="/authentication" class="nav-link"><div>Вход</div></a>
+          </li>
+        </ng-template>
+        <li>
+          <a routerLink="/cart" class="nav-link">
+            <div>
+              <img src="assets\img\icons\cart_icon.svg" class="cart-icon">
+              <span>Корзина</span>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>

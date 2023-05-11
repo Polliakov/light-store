@@ -1,0 +1,11 @@
+"filename", "language", "SCSS", "TypeScript", "HTML", "comment", "blank", "total"
+"d:\JS\light-store\src\app\modules\admins\pages\admin-page\admin-page.component.scss", "SCSS", -8, 0, 0, 0, -1, -9
+"d:\JS\light-store\src\app\modules\customers\customers.module.ts", "TypeScript", 0, 2, 0, 0, 0, 2
+"d:\JS\light-store\src\app\modules\customers\pages\customer-page\customer-page.component.html", "HTML", 0, 0, 2, 0, -1, 1
+"d:\JS\light-store\src\app\modules\customers\pages\customer-page\customer-page.component.scss", "SCSS", -4, 0, 0, 0, 0, -4
+"d:\JS\light-store\src\app\modules\customers\tabs\personal-tab\personal-tab.component.html", "HTML", 0, 0, 28, 0, 4, 32
+"d:\JS\light-store\src\app\modules\customers\tabs\personal-tab\personal-tab.component.ts", "TypeScript", 0, 46, 0, 2, 6, 54
+"d:\JS\light-store\src\app\modules\employees\pages\employee-page\employee-page.component.scss", "SCSS", -8, 0, 0, 0, -1, -9
+"d:\JS\light-store\src\app\modules\shared\components\search\search.component.ts", "TypeScript", 0, 1, 0, 0, 0, 1
+"d:\JS\light-store\src\styles.scss", "SCSS", 8, 0, 0, 0, 1, 9
+"Total", "-", -12, 49, 30, 2, 8, 77

@@ -1,0 +1,102 @@
+Date : 2023-05-03 15:17:00
+Directory : d:\JS\light-store\src
+Total : 44 files,  456 codes, 0 comments, 65 blanks, all 521 lines
+
+Languages
++------------+------------+------------+------------+------------+------------+
+| language   | files      | code       | comment    | blank      | total      |
++------------+------------+------------+------------+------------+------------+
+| TypeScript |         26 |        211 |          0 |         42 |        253 |
+| SCSS       |         10 |        184 |          0 |         21 |        205 |
+| HTML       |          8 |         61 |          0 |          2 |         63 |
++------------+------------+------------+------------+------------+------------+
+
+Directories
++--------------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                                                                     | files      | code       | comment    | blank      | total      |
++--------------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                                                        |         44 |        456 |          0 |         65 |        521 |
+| . (Files)                                                                                                                |          1 |         56 |          0 |          2 |         58 |
+| app                                                                                                                      |         43 |        400 |          0 |         63 |        463 |
+| app\modules                                                                                                              |         43 |        400 |          0 |         63 |        463 |
+| app\modules\admins                                                                                                       |          1 |          1 |          0 |          0 |          1 |
+| app\modules\admins\services                                                                                              |          1 |          1 |          0 |          0 |          1 |
+| app\modules\customers                                                                                                    |         25 |        340 |          0 |         48 |        388 |
+| app\modules\customers (Files)                                                                                            |          2 |          6 |          0 |          0 |          6 |
+| app\modules\customers\components                                                                                         |         11 |        154 |          0 |         26 |        180 |
+| app\modules\customers\components\modal-product-remains                                                                   |          3 |         61 |          0 |         11 |         72 |
+| app\modules\customers\components\order-item                                                                              |          2 |         38 |          0 |          7 |         45 |
+| app\modules\customers\components\product-availability                                                                    |          3 |         31 |          0 |          5 |         36 |
+| app\modules\customers\components\product-card                                                                            |          3 |         24 |          0 |          3 |         27 |
+| app\modules\customers\models                                                                                             |          2 |          2 |          0 |          1 |          3 |
+| app\modules\customers\models (Files)                                                                                     |          1 |          1 |          0 |          1 |          2 |
+| app\modules\customers\models\dtos                                                                                        |          1 |          1 |          0 |          0 |          1 |
+| app\modules\customers\pages                                                                                              |         10 |        178 |          0 |         21 |        199 |
+| app\modules\customers\pages\cart-page                                                                                    |          1 |          7 |          0 |          1 |          8 |
+| app\modules\customers\pages\order-creating-page                                                                          |          3 |        103 |          0 |         10 |        113 |
+| app\modules\customers\pages\product-details-page                                                                         |          3 |         25 |          0 |          3 |         28 |
+| app\modules\customers\pages\products-page                                                                                |          3 |         43 |          0 |          7 |         50 |
+| app\modules\shared                                                                                                       |         17 |         59 |          0 |         15 |         74 |
+| app\modules\shared (Files)                                                                                               |          1 |          3 |          0 |          0 |          3 |
+| app\modules\shared\components                                                                                            |          6 |          1 |          0 |          1 |          2 |
+| app\modules\shared\components\modal                                                                                      |          1 |          1 |          0 |          0 |          1 |
+| app\modules\shared\components\products-category-card                                                                     |          1 |          1 |          0 |          0 |          1 |
+| app\modules\shared\components\products-category-selector                                                                 |          3 |         -2 |          0 |          1 |         -1 |
+| app\modules\shared\components\search                                                                                     |          1 |          1 |          0 |          0 |          1 |
+| app\modules\shared\models                                                                                                |          5 |         10 |          0 |          3 |         13 |
+| app\modules\shared\models (Files)                                                                                        |          4 |          9 |          0 |          3 |         12 |
+| app\modules\shared\models\dtos                                                                                           |          1 |          1 |          0 |          0 |          1 |
+| app\modules\shared\pipes                                                                                                 |          1 |         18 |          0 |          7 |         25 |
+| app\modules\shared\services                                                                                              |          4 |         27 |          0 |          4 |         31 |
++--------------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++--------------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| filename                                                                                                                 | language   | code       | comment    | blank      | total      |
++--------------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| d:\JS\light-store\src\app\modules\admins\services\warehouse.service.ts                                                   | TypeScript |          1 |          0 |          0 |          1 |
+| d:\JS\light-store\src\app\modules\customers\components\modal-product-remains\modal-product-remains.component.html        | HTML       |         15 |          0 |          1 |         16 |
+| d:\JS\light-store\src\app\modules\customers\components\modal-product-remains\modal-product-remains.component.scss        | SCSS       |         13 |          0 |          2 |         15 |
+| d:\JS\light-store\src\app\modules\customers\components\modal-product-remains\modal-product-remains.component.ts          | TypeScript |         33 |          0 |          8 |         41 |
+| d:\JS\light-store\src\app\modules\customers\components\order-item\order-item.component.html                              | HTML       |          1 |          0 |          0 |          1 |
+| d:\JS\light-store\src\app\modules\customers\components\order-item\order-item.component.scss                              | SCSS       |         37 |          0 |          7 |         44 |
+| d:\JS\light-store\src\app\modules\customers\components\product-availability\product-availability.component.html          | HTML       |         14 |          0 |          1 |         15 |
+| d:\JS\light-store\src\app\modules\customers\components\product-availability\product-availability.component.scss          | SCSS       |          4 |          0 |          1 |          5 |
+| d:\JS\light-store\src\app\modules\customers\components\product-availability\product-availability.component.ts            | TypeScript |         13 |          0 |          3 |         16 |
+| d:\JS\light-store\src\app\modules\customers\components\product-card\product-card.component.html                          | HTML       |         12 |          0 |          0 |         12 |
+| d:\JS\light-store\src\app\modules\customers\components\product-card\product-card.component.scss                          | SCSS       |          4 |          0 |          1 |          5 |
+| d:\JS\light-store\src\app\modules\customers\components\product-card\product-card.component.ts                            | TypeScript |          8 |          0 |          2 |         10 |
+| d:\JS\light-store\src\app\modules\customers\customers-routing.module.ts                                                  | TypeScript |          2 |          0 |          0 |          2 |
+| d:\JS\light-store\src\app\modules\customers\customers.module.ts                                                          | TypeScript |          4 |          0 |          0 |          4 |
+| d:\JS\light-store\src\app\modules\customers\models\dtos\create-order-dto.ts                                              | TypeScript |          1 |          0 |          0 |          1 |
+| d:\JS\light-store\src\app\modules\customers\models\order-item.ts                                                         | TypeScript |          1 |          0 |          1 |          2 |
+| d:\JS\light-store\src\app\modules\customers\pages\cart-page\cart-page.component.ts                                       | TypeScript |          7 |          0 |          1 |          8 |
+| d:\JS\light-store\src\app\modules\customers\pages\order-creating-page\order-creating-page.component.html                 | HTML       |          2 |          0 |          0 |          2 |
+| d:\JS\light-store\src\app\modules\customers\pages\order-creating-page\order-creating-page.component.scss                 | SCSS       |         66 |          0 |          7 |         73 |
+| d:\JS\light-store\src\app\modules\customers\pages\order-creating-page\order-creating-page.component.ts                   | TypeScript |         35 |          0 |          3 |         38 |
+| d:\JS\light-store\src\app\modules\customers\pages\product-details-page\product-details-page.component.html               | HTML       |         12 |          0 |          0 |         12 |
+| d:\JS\light-store\src\app\modules\customers\pages\product-details-page\product-details-page.component.scss               | SCSS       |          3 |          0 |          1 |          4 |
+| d:\JS\light-store\src\app\modules\customers\pages\product-details-page\product-details-page.component.ts                 | TypeScript |         10 |          0 |          2 |         12 |
+| d:\JS\light-store\src\app\modules\customers\pages\products-page\products-page.component.html                             | HTML       |         10 |          0 |          0 |         10 |
+| d:\JS\light-store\src\app\modules\customers\pages\products-page\products-page.component.scss                             | SCSS       |          3 |          0 |          1 |          4 |
+| d:\JS\light-store\src\app\modules\customers\pages\products-page\products-page.component.ts                               | TypeScript |         30 |          0 |          6 |         36 |
+| d:\JS\light-store\src\app\modules\shared\components\modal\modal.component.ts                                             | TypeScript |          1 |          0 |          0 |          1 |
+| d:\JS\light-store\src\app\modules\shared\components\products-category-card\products-category-card.component.scss         | SCSS       |          1 |          0 |          0 |          1 |
+| d:\JS\light-store\src\app\modules\shared\components\products-category-selector\products-category-selector.component.html | HTML       |         -5 |          0 |          0 |         -5 |
+| d:\JS\light-store\src\app\modules\shared\components\products-category-selector\products-category-selector.component.scss | SCSS       |         -3 |          0 |         -1 |         -4 |
+| d:\JS\light-store\src\app\modules\shared\components\products-category-selector\products-category-selector.component.ts   | TypeScript |          6 |          0 |          2 |          8 |
+| d:\JS\light-store\src\app\modules\shared\components\search\search.component.ts                                           | TypeScript |          1 |          0 |          0 |          1 |
+| d:\JS\light-store\src\app\modules\shared\models\dtos\product-filter-args.ts                                              | TypeScript |          1 |          0 |          0 |          1 |
+| d:\JS\light-store\src\app\modules\shared\models\product-details.ts                                                       | TypeScript |          1 |          0 |          1 |          2 |
+| d:\JS\light-store\src\app\modules\shared\models\product-in-warehouse.ts                                                  | TypeScript |          5 |          0 |          2 |          7 |
+| d:\JS\light-store\src\app\modules\shared\models\product-item.ts                                                          | TypeScript |          2 |          0 |          1 |          3 |
+| d:\JS\light-store\src\app\modules\shared\models\product.ts                                                               | TypeScript |          1 |          0 |         -1 |          0 |
+| d:\JS\light-store\src\app\modules\shared\pipes\decl-by-num.pipe.ts                                                       | TypeScript |         18 |          0 |          7 |         25 |
+| d:\JS\light-store\src\app\modules\shared\services\product-get.service.ts                                                 | TypeScript |          3 |          0 |          0 |          3 |
+| d:\JS\light-store\src\app\modules\shared\services\product-in-warehouse.service.ts                                        | TypeScript |         24 |          0 |          4 |         28 |
+| d:\JS\light-store\src\app\modules\shared\services\warehouse-get.service.ts                                               | TypeScript |         24 |          0 |          4 |         28 |
+| d:\JS\light-store\src\app\modules\shared\services\warehouse.service.ts                                                   | TypeScript |        -24 |          0 |         -4 |        -28 |
+| d:\JS\light-store\src\app\modules\shared\shared.module.ts                                                                | TypeScript |          3 |          0 |          0 |          3 |
+| d:\JS\light-store\src\styles.scss                                                                                        | SCSS       |         56 |          0 |          2 |         58 |
+| Total                                                                                                                    |            |        456 |          0 |         65 |        521 |
++--------------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+

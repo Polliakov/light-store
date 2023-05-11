@@ -1,0 +1,21 @@
+@import "src/mixins";
+
+.img-container {
+  @include responsive-container(1);
+  background-color: var(--bg-img);
+  border-radius: 5px;
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+
+.img-content {
+  @include responsive-content;
+}
+
+.nav-link.title{
+  display: block;
+}
+
+.price {
+  margin-top: 8px;
+}

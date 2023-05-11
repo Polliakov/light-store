@@ -1,0 +1,26 @@
+.layout {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 8px;
+  >* {
+    margin-bottom: 16px;
+    margin-right: 16px;
+  }
+}
+
+.selcted-section {
+  display: grid;
+  column-gap: 16px;
+  align-items: center;
+  grid-template-columns: min(32px) auto;
+  grid-template-rows: 32px;
+  grid-template-areas: "B N";
+  margin-bottom: 16px;
+}
+
+.selected-name {
+  grid-area: N;
+  font-size: 18px;
+  place-self: 2;
+}

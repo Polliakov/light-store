@@ -1,0 +1,11 @@
+<div class="notification">
+  <div class="marker" [ngClass]="{
+    'error': type == typeEnum.Error,
+    'success': type == typeEnum.Success,
+    'indo': type == typeEnum.Info
+  }"></div>
+  <p class="content">{{content}}</p>
+  <div class="btn-close-wrapper">
+    <button class="btn-close" (click)="close.emit()"></button>
+  </div>
+</div>

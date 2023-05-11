@@ -1,0 +1,28 @@
+@import "src/variables";
+
+.product-card-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px 16px;
+  margin-bottom: 32px;
+
+  @media (max-width: $bp-lg) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.found-count {
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--color-secondary);
+  margin-left: 16px;
+  margin-bottom: 16px;
+}
+
+.search-wrapper {
+  margin-bottom: 16px;
+}
+
+.pagination-wrapper {
+  margin-bottom: 64px;
+}

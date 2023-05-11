@@ -1,0 +1,53 @@
+<img *ngIf="loading" class="lds-spinner" src="assets/img/gifs/loading-spinner.gif" alt="...">
+<div *ngIf="!loading" class="tab-container md">
+  <h2 class="center">Профиль</h2>
+
+  <div class="form-section">
+    <label for="email">Email</label>
+    <input [readOnly]="true" type="text" name="email" class="form-text"
+      [value]="email"
+    >
+  </div>
+
+  <form [formGroup]="form" (ngSubmit)="submit()">
+    <div class="form-section">
+      <label for="surname">Фамилия</label>
+      <input [readOnly]="!isEditMode" type="text" name="surname" formControlName="surname"
+        placeholder="Введите фамилию..." class="form-text">
+      <app-form-error [control]="surname"></app-form-error>
+    </div>
+
+    <div class="form-section">
+      <label for="name">Имя</label>
+      <input [readOnly]="!isEditMode" type="text" name="name" formControlName="name"
+        placeholder="Введите имя..." class="form-text">
+      <app-form-error [control]="name"></app-form-error>
+    </div>
+
+    <div class="form-section">
+      <label for="patronymic">Отчество</label>
+      <input [readOnly]="!isEditMode" type="text" name="patronymic" formControlName="patronymic"
+        [placeholder]="isEditMode ? 'Введите отчество при наличии...' : '-'" class="form-text">
+      <app-form-error [control]="patronymic"></app-form-error>
+    </div>
+
+    <div *ngIf="isEditMode; else editBtnBlock" class="form-btn-wrapper form-section">
+      <button type="button" [disabled]="isBtnSubmitDisabled" (click)="cancellEdit()" class="btn">
+        Отмена
+      </button>
+      <button [disabled]="isBtnSubmitDisabled" class="btn">
+        Сохранить
+      </button>
+    </div>
+    <ng-template #editBtnBlock>
+      <div class="form-btn-wrapper form-section">
+        <button type="button" (click)="edit()" class="btn">
+          Редактировать
+        </button>
+      </div>
+    </ng-template>
+  </form>
+  <app-dropdown-label title="Смена пароля" [isPreFolded]="true">
+    <app-change-password></app-change-password>
+  </app-dropdown-label>
+</div>

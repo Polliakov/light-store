@@ -1,0 +1,17 @@
+@import "src/mixins";
+
+.img-container {
+  @include img-container(256px);
+  margin-bottom: 16px;
+}
+
+.title {
+  margin-bottom: 4px;
+}
+
+.price-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 40px;
+}

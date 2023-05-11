@@ -1,0 +1,22 @@
+nav {
+  min-width: 196px;
+}
+
+ul {
+  list-style-type: none;
+
+  >li {
+    >a{
+      display: block;
+      padding: 8px 16px;
+
+      &:hover {
+        background-color: var(--bg-btn-hower);
+      }
+    }
+  }
+}
+
+.link-active {
+  background-color: var(--bg-active-light);
+}
