@@ -1,0 +1,8 @@
+<div class="employee-item" (click)="onClick()">
+  <div class="attributes">
+    <div class="attribute">{{employee.email}}</div>
+    <div class="attribute">{{employee | personFullName}}</div>
+    <div class="attribute">{{employee.role | userRole | titlecase}}</div>
+  </div>
+  <button (click)="onDeleteButtonClick()" class="btn-close md"></button>
+</div>

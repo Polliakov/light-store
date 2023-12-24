@@ -1,0 +1,33 @@
+@import "src/variables";
+@import "src/mixins";
+
+.item {
+  display: flex;
+  align-items: center;
+  padding: 16px 4px;
+  border-bottom: 1px solid var(--brd-light);
+  >*:not(:last-child){
+    margin-right: 8px;
+  }
+}
+
+.title-section {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.img-container {
+  @include img-container(80px);
+  margin-right: 16px;
+}
+
+.nav-link.title{
+  display: block;
+  min-width: 128px;
+}
+
+.counter {
+  @include flex-center;
+  width: 144px;
+}

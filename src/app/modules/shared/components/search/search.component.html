@@ -1,0 +1,13 @@
+<div class="search-wrapper">
+  <input #input type="text" placeholder="Найти..." class="search"
+    (input)="onSearchInput()" (keydown.enter)="emitSearch()"
+  >
+  <button class="btn-close md" [hidden]="isBtnClearHidder"
+    (click)="clearInput()"
+  ></button>
+  <div class="search-btn-wrapper">
+    <button (click)="emitSearch()" class="search-btn">
+      <img src="assets/img/icons/search.svg" class="search-icon">
+    </button>
+  </div>
+</div>

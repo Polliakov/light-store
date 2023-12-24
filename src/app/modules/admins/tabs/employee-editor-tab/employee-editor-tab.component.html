@@ -1,0 +1,61 @@
+<div class="tab-container">
+  <h1 class="center">Регистрация сотрудника</h1>
+  <form [formGroup]="form" (ngSubmit)="submit()">
+    <div class="form-section">
+      <label for="surname">Фамилия</label>
+      <input type="text" name="surname" formControlName="surname"
+        placeholder="Введите фамилию..." class="form-text">
+      <app-form-error [control]="surname"></app-form-error>
+    </div>
+
+    <div class="form-section">
+      <label for="name">Имя</label>
+      <input type="text" name="name" formControlName="name"
+        placeholder="Введите имя..." class="form-text">
+      <app-form-error [control]="name"></app-form-error>
+    </div>
+
+    <div class="form-section">
+      <label for="patronymic">Отчество</label>
+      <input type="text" name="patronymic" formControlName="patronymic"
+        placeholder="Введите отчество при наличии..." class="form-text">
+      <app-form-error [control]="patronymic"></app-form-error>
+    </div>
+
+    <div class="form-section">
+      <label for="email">Email</label>
+      <input type="text" name="email" formControlName="email"
+        placeholder="Введите почту..." class="form-text">
+      <app-form-error [control]="email"></app-form-error>
+    </div>
+
+    <div class="form-section">
+      <label for="password">Пароль</label>
+      <input type="password" name="password" formControlName="password"
+        placeholder="Введите пароль..." class="form-text">
+      <app-form-error [control]="password"></app-form-error>
+    </div>
+
+    <div class="form-section">
+      <label for="passwordRepeat">Подтверждение пароля</label>
+      <input type="password" name="passwordRepeat" formControlName="passwordRepeat"
+        placeholder="Повторите пароль..." class="form-text">
+      <app-form-error [control]="passwordRepeat" [messages]="passwordRepeatMessages"></app-form-error>
+    </div>
+
+    <div class="form-section">
+      <label for="role">Роль доступа</label>
+      <select name="role" formControlName="role" class="form-select-lg">
+        <option [ngValue]="1">Сотрудник</option>
+        <option [ngValue]="2">Администратор</option>
+      </select>
+    </div>
+
+    <div class="form-section form-btn-wrapper">
+      <button [disabled]="isBtnSubmitDisabled" class="btn">Отправить</button>
+    </div>
+    <p *ngIf="isEmailOccupied" class="form-error global">
+      Пользователь с такой почтой уже существует
+    </p>
+  </form>
+</div>

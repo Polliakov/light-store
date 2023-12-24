@@ -1,0 +1,17 @@
+.reg-container {
+  margin: 64px auto;
+  width: 400px;
+}
+
+.checkbox-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.checkbox-label {
+  font-size: 14px;
+  color: var(--color-secondary);
+  margin-left: 16px;
+}

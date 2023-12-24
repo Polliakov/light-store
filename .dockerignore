@@ -1,0 +1,6 @@
+.vscode
+.VSCodeCounter
+node_modules
+dist
+.git
+.gitignore

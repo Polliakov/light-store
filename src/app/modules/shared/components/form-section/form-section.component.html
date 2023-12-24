@@ -1,0 +1,6 @@
+<div class="form-section">
+  <label [for]="name">{{label}}</label>
+  <input [type]="inputType" [name]="name" [formControlName]="name"
+    [placeholder]="placeholder" class="form-text">
+  <app-form-error [control]="control"></app-form-error>
+</div>

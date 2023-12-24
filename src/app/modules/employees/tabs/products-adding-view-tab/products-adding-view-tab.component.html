@@ -1,0 +1,18 @@
+<img *ngIf="loading" class="lds-spinner" src="assets/img/gifs/loading-spinner.gif" alt="...">
+<div *ngIf="adding$ | async as adding" class="tab-container lg">
+  <h2 class="center">Поступление</h2>
+  <div class="form-section">
+    <div class="attribute-grid">
+      <div class="attribute">Дата:</div>
+      <div class="attribute">{{adding.creationDate | localDate: 'dd.MM.yyyy - HH:mm'}}</div>
+      <div class="attribute">Магазин:</div>
+      <div class="attribute">{{adding.warehouse.name}}</div>
+      <div class="attribute">Сотрудник:</div>
+      <div class="attribute">{{adding.employee | personFullName}}</div>
+    </div>
+  </div>
+  <div class="form-group-title">Товары</div>
+  <app-product-in-adding *ngFor="let product of adding.productsInAdding"
+    [product]="product" [readonly]="true"
+  ></app-product-in-adding>
+</div>

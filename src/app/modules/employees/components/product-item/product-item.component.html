@@ -1,0 +1,9 @@
+<div class="card" >
+  <div (click)="onClick()" class="img-container">
+    <div class="img-content">
+      <img [src]="product.imageUri" [alt]="product.title" class="img-fit">
+    </div>
+  </div>
+  <div (click)="onClick()" class="nav-link title">{{product.title}}</div>
+  <div *ngIf="showPrice" class="price md">{{product.price | price}} р.</div>
+</div>

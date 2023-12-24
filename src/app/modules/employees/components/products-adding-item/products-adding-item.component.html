@@ -1,0 +1,5 @@
+<div class="adding-item" (click)="onClick()">
+  <div class="attribute">{{adding.creationDate | localDate: 'dd.MM.yyyy - HH:mm'}}</div>
+  <div class="attribute">{{adding.warehouse.name}}</div>
+  <div class="attribute">{{adding.employee | personFullName}}</div>
+</div>

@@ -1,0 +1,8 @@
+<h1>Контакты</h1>
+<h2>Наши магазины</h2>
+<img *ngIf="loading" class="lds-spinner" src="assets/img/gifs/loading-spinner.gif" alt="...">
+<div>
+  <app-warehouse *ngFor="let warehouse of warehouses$ | async"
+    [warehouse]="warehouse"
+  ></app-warehouse>
+</div>

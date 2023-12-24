@@ -1,0 +1,20 @@
+<app-modal-accept #modalDelete
+title="{{'Удалить сотрудника?'}}"
+(accepted)="modalDeleteAccept()"
+>
+</app-modal-accept>
+<div class="tab-container fill">
+  <h2 class="center">Сотрудники</h2>
+  <div class="tab-btn-section">
+    <a routerLink="../add-employee" class="btn">Добавить</a>
+  </div>
+  <div class="headers">
+    <div class="header">Email</div>
+    <div class="header">ФИО</div>
+    <div class="header">Роль доступа</div>
+  </div>
+  <img *ngIf="loading" class="lds-spinner" src="assets/img/gifs/loading-spinner.gif" alt="...">
+  <app-employee-item *ngFor="let employee of employees"
+    [employee]="employee" (deleteClick)="onEmployeeDelete($event)" (selected)="onEmployeeSelected($event)"
+  ></app-employee-item>
+</div>

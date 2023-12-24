@@ -1,0 +1,26 @@
+<header>
+  <div class="container">
+    <nav>
+      <a routerLink="/products">
+        <img src="assets/img/logo.png" alt="Кузнечный дом" class="logo">
+      </a>
+      <div class="title-section">
+        <a routerLink="/admin/employees" class="nav-link header-title">
+          Администратор
+        </a>
+      </div>
+      <ul>
+        <li>
+          <div class="dropdown">
+            <a routerLink="/admin/employees" class="nav-link"><div>Профиль</div></a>
+            <div class="dropdown-content-wrapper">
+              <div class="dropdown-content">
+                <button (click)="onBtnLogoutClick()" class="nav-link">Выйти</button>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>

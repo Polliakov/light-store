@@ -1,0 +1,14 @@
+.grid-layout {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px 16px;
+  margin-bottom: 32px;
+}
+
+.search-wrapper {
+  margin-bottom: 16px;
+}
+
+.pagination-wrapper {
+  margin-bottom: 64px;
+}

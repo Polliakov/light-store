@@ -1,0 +1,21 @@
+<div class="tab-container fill">
+  <h2 class="center main-title">Заказы</h2>
+  <img *ngIf="loading" class="lds-spinner" src="assets/img/gifs/loading-spinner.gif" alt="...">
+  <ng-container *ngIf="orders$ | async as orders">
+    <div *ngIf="orders.length > 0; else noOrdersBlock" class="orders-container">
+      <app-order-card
+        *ngFor="let order of orders" [order]="order"
+        (cardClick)="toOrderDetails($event)"
+      ></app-order-card>
+    </div>
+    <ng-template #noOrdersBlock>
+      <h3 class="center">Нет заказов</h3>
+    </ng-template>
+  </ng-container>
+  <div class="pagination-wrapper">
+    <app-pagination-control [hidden]="loading"
+      [pageSize]="pageSize" [elementsCount]="(foundCount$ | async)!"
+      [currentPage]="currentPage" (pageChanged)="onPageChanged($event)"
+    ></app-pagination-control>
+  </div>
+</div>

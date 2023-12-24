@@ -1,0 +1,6 @@
+<div (click)="onClick()" class="card category">
+  <div class="img-container">
+      <img [src]="category.imageUri" [alt]="category.name" class="img-fit">
+  </div>
+  <div (click)="onClick()" class="nav-link title">{{category.name}}</div>
+</div>

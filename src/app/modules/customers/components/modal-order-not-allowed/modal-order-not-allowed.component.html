@@ -1,0 +1,9 @@
+<app-modal *ngIf="visible" (shadingClick)="hide()">
+  <h2>Не удалось зделать заказ</h2>
+  <p>
+    Товар уже куплен.
+  </p>
+  <div class="form-btn-wrapper">
+    <button (click)="hide()" class="btn">Ок</button>
+  </div>
+</app-modal>

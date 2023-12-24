@@ -1,0 +1,16 @@
+<img *ngIf="loading" class="lds-spinner" src="assets/img/gifs/loading-spinner.gif" alt="...">
+<div *ngIf="order$ | async as order" class="tab-container fill">
+  <h2 class="center title">
+    Заказ от: {{order.creationDate | localDate: 'dd.MM.yyyy - HH:mm'}}
+  </h2>
+  <div class="summary-layout">
+    <div>
+      <app-reciving-place [warehouse]="order.warehouse"></app-reciving-place>
+      <app-order-items-summary [items]="order.productsInOrder"></app-order-items-summary>
+    </div>
+    <div>
+      <span>Статус: <span class="status">{{order.status | orderStatus}}</span></span>
+    </div>
+  </div>
+  <app-order-items-list [items]="order.productsInOrder"></app-order-items-list>
+</div>

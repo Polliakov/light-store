@@ -1,0 +1,23 @@
+<div class="tab-container fill">
+  <h2 class="center">Регистрация поступления</h2>
+  <form [formGroup]="form" (ngSubmit)="submit()" class="tab-container md">
+    <div class="form-section">
+      <label for="warehouseId">Магазин</label>
+      <select name="warehouseId" formControlName="warehouseId" class="form-select-lg">
+        <option [ngValue]="null" selected disabled>Выберите магазин</option>
+        <option *ngFor="let warehouse of warehouses$ | async" [ngValue]="warehouse.id"
+        >{{warehouse.name}}</option>
+      </select>
+      <app-form-error [control]="warehouseId"></app-form-error>
+    </div>
+    <button [disabled]="isBtnSubmitDisabled" class="btn">Сохранить</button>
+  </form>
+  <div class="form-section scrolable-container">
+    <h3 *ngIf="!products?.length" class="center">Выберите товары...</h3>
+    <app-product-in-adding *ngFor="let product of products" [product]="product"
+      (remove)="onProductRemove($event)"
+    ></app-product-in-adding>
+  </div>
+  <div class="form-group-title">Товары</div>
+  <app-product-selector [showPrice]="false" (selected)="onProductSelected($event)"></app-product-selector>
+</div>

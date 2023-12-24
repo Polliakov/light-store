@@ -1,0 +1,19 @@
+@import "src/mixins";
+
+.employee-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-bottom: 1px solid var(--brd-light);
+  //cursor: pointer;
+}
+
+.attributes {
+  @include table-row(3);
+  border: none;
+  flex-grow: 1;
+}
+
+.attribute {
+  margin: 8px 8px;
+}

@@ -1,0 +1,41 @@
+<img *ngIf="loading" class="lds-spinner" src="assets/img/gifs/loading-spinner.gif" alt="...">
+<app-modal-accept #modalDelete
+  title="{{'Удалить \"' + warehouseName + '\"?'}}"
+  (accepted)="modalDeleteAccept()"
+></app-modal-accept>
+<div *ngIf="!loading" class="tab-container md">
+  <h2 class="center">{{isEditMode ? 'Редактирование' : 'Добавление'}} магазина</h2>
+  <form [formGroup]="form" (ngSubmit)="submit()">
+
+    <div class="form-section">
+      <label for="title">Название</label>
+      <input type="text" name="name" formControlName="name"
+        placeholder="Введите название..." class="form-text">
+      <app-form-error [control]="name"></app-form-error>
+    </div>
+
+    <div class="form-section">
+      <app-image-selector (selected)="onImageSelected($event)"></app-image-selector>
+    </div>
+
+    <div class="form-section">
+      <label for="address">Адрес</label>
+      <input type="text" name="address" formControlName="address"
+        placeholder="Введите адрес..." class="form-text">
+      <app-form-error [control]="address"></app-form-error>
+    </div>
+
+    <div class="form-section">
+      <label for="phoneNumber">Контактный телефон</label>
+      <input type="text" phoneMask name="phoneNumber" formControlName="phoneNumber"
+        placeholder="+7 (000) 000-00-00" class="form-text">
+      <app-form-error [control]="phoneNumber"></app-form-error>
+    </div>
+
+    <div class="form-section form-btn-wrapper">
+      <button [disabled]="isBtnSubmitDisabled" class="btn">Сохранить</button>
+      <button [disabled]="isBtnSubmitDisabled" type="button" *ngIf="isEditMode"
+        (click)="onBtnDeleteClick()" class="btn delete">Удалить</button>
+    </div>
+  </form>
+</div>
