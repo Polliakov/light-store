@@ -1,8 +1,0 @@
-<app-modal *ngIf="visible" (shadingClick)="reject()">
-  <h2>{{title}}</h2>
-  <ng-content></ng-content>
-  <div class="form-btn-wrapper">
-    <button (click)="accept()" class="btn delete">Да</button>
-    <button (click)="reject()" class="btn">Отмена</button>
-  </div>
-</app-modal>

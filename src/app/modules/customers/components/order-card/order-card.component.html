@@ -1,7 +1,0 @@
-<div (click)="onCardClick()" class="card order">
-  <div>
-    <h3>{{order.creationDate | localDate: 'dd.MM.yyyy - HH:mm'}}</h3>
-    <div>Место получения: {{order.warehouse.name}}</div>
-  </div>
-  <div class="status">{{order.status | orderStatus}}</div>
-</div>
